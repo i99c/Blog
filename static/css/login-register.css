@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alfa Slab One", serif;
+}
+
+html,
+body {
+    background-color: #102C6B;
+}
+
+.alfa-slab one-regular {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ------------------------------ Login --------------------------------------- */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 550px;
+    background: url('https://img.freepik.com/premium-photo/colorful-gaming-controller-with-colorful-display-background_889431-1343.jpg?w=826') no-repeat center/cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.container .content {
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 80px;
+    color: #742c57;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* ------------- <<Register Buton
+>>-------------- */
+.register {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff0000, #ffa500, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.register:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    background-size: 600% 600%;
+    animation: gradient 5s ease infinite;
+    opacity: 0.5;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.register:hover {
+    background: linear-gradient(45deg, #ff0000, #ffa500, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container .content button {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+/* ------------- <<Register Buton
+>>-------------- */
+.container .logreg-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    background: transparent;
+}
+
+/* ----------------------------------------- */
+.content .logo {
+    font-size: 30px;
+}
+
+.text-sci h2 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.text-sci h2 span {
+    font-size: 40px;
+}
+
+.text-sci p {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.social-icons a i {
+    font-size: 22px;
+    color: #e4e4e4;
+    margin-right: 10px;
+    transition: .5s ease;
+}
+
+.social-icons a:hover i {
+    transform: scale(1.2);
+    color: #B3C8CF;
+}
+
+.logreg-box .form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #e4e4e4;
+}
+
+.form-box h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-box .input-box {
+    width: 290px;
+    height: 80px;
+    border-bottom: 1px solid white;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+#remember-forgot {
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#remember-forgot .checkbox {
+    margin-right: 5px;
+}
+
+.checkbox a {
+    margin-left: 15px;
+}
+
+/* --------------------Giriş Yap Btn------------------- */
+.register-btn {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    background: linear-gradient(45deg, #FF8AAE, #FFB2A6, #FFF89A, #9ADCFF, #D8B4F8, #FFC7EA, #FBF0B2);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.register-btn:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(to right, #FFCDEA, #FB9AD1, #BC7FCD, #00ff00, #86469C, #4b0082, #9400d3);
+    background-size: 600% 600%;
+    animation: gradient 5s ease infinite;
+    opacity: 0.5;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.register-btn:hover {
+    background: linear-gradient(45deg, #ff0000, #ffa500, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ------------------------------------- Register ------------------------------------------------ */

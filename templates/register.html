@@ -1,0 +1,48 @@
+{% load static %}
+
+<title>Register</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="{% static 'css/register.css' %}" />
+
+<div class="container">
+  <div class="content">
+    <h2 class="logo"><i class="fa fa-gamepad fa-xl" style="color: #240046;"></i>Blog</h2>
+    <div class="text-sci">
+      <h2>Hoşgeldin! <br /><span>Üye Olmak İçin Formu Doldur</span></h2>
+      <form method="post" action="{% url 'register' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="input-box">
+          <span class="icon"><i class="fa fa-user"></i></span>
+          <input type="text" name="username" placeholder="Kullanıcı Adınızı Giriniz" required />
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa fa-lock"></i></span>
+          <input type="password" name="password1" placeholder="Şifrenizi Giriniz" style="color: white;" required />
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa fa-lock"></i></span>
+          <input type="password" name="password2" placeholder="Şifre Tekrar" style="color: white;" required />
+        </div>
+        <button class="register-btn" type="submit">Kayıt Ol</button>
+      </form>
+
+      <p>🎮İşimiz gücümüz oyun🎮</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-discord"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-steam"></i></a>
+        <a href="#"><i class="fa-brands fa-figma"></i></a>
+        <a href="#"><i class="fa-brands fa-twitch"></i></a>
+        <a href="#"><i class="fa-brands fa-spotify"></i></a>
+        <a href="#"><i class="fa-brands fa-playstation"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://kit.fontawesome.com/767955e4cb.js" crossorigin="anonymous"></script>

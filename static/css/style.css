@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Macondo", cursive;
+}
+
+body {
+    background: linear-gradient(to right, #86469C, #BC7FCD, #FB9AD1, #FFCDEA, #1D24CA);
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    /* Değiştirebilirsiniz */
+    padding: 10px;
+}
+
+/* Logo */
+.navbar img {
+    height: 50px;
+    /* Değiştirebilirsiniz */
+}
+
+/* Navbar menü metinleri */
+.nav-text ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-text li {
+    display: inline;
+    margin-right: 10px;
+    /* Değiştirebilirsiniz */
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: white;
+    /* Değiştirebilirsiniz */
+}
+
+/* Butonlar */
+.nav-sağ button {
+    background-color: #4CAF50;
+    /* Değiştirebilirsiniz */
+    color: white;
+    /* Değiştirebilirsiniz */
+    border: none;
+    padding: 10px 20px;
+    /* Değiştirebilirsiniz */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* Değiştirebilirsiniz */
+    margin: 2px 2px;
+    /* Değiştirebilirsiniz */
+    cursor: pointer;
+    border-radius: 4px;
+    /* Değiştirebilirsiniz */
+}
+
+/* Üye Ol butonu */
+.nav-sağ .üye-ol button {
+    background: linear-gradient(to right, #018383, #02A8A8, #42E6A4);
+}
+
+/* Giriş Yap butonu */
+.nav-sağ .login button {
+    background: linear-gradient(to right, #F8DE22, #F94C10, #FF1700);
+}
+
+/* Çıkış Yap butonu */
+.nav-sağ .logout button {
+    background: linear-gradient(to right, #530C0C, #8F0E0E, #FA7E0A);
+}
+
+/* Buton animasyonu */
+.nav-sağ button {
+    transition: background-color 0.3s ease;
+    /* Arka plan rengi için 0.3 saniyelik yumuşak geçiş */
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* ! Card Yapısı */
+.konular {
+    display: flex;
+    max-width: 600px;
+    /* Kartın maksimum genişliği */
+    margin: 20px auto;
+    /* Merkezlemek için */
+    border-radius: 8px;
+    overflow: hidden;
+    /* İçeriğin taşmasını engelle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge efekti */
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.content {
+    background-color: #f8f9fa;
+    /* İçerik arka plan rengi */
+    padding: 20px;
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #C400FF;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background: linear-gradient(90deg, #ff6600, #ff9900);
+    /* Buton arka plan rengi */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    /* Bağlantıyı kaldır */
+    box-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
+    /* Buton gölge efekti */
+    animation: neon 2s ease-in-out infinite;
+    /* Neon animasyonu */
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #ff9900, #ff6600);
+    /* Buton hover arka plan rengi */
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.8);
+    /* Buton hover gölge efekti */
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff6600;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #ff9900, 0 0 20px #ff9900, 0 0 30px #ff9900, 0 0 40px #ff9900;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff6600;
+    }
+}
+
+/* ------------------------Footer------------------------------------------ */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+}
+
+.footer hr {
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+.footer .footer-box {
+    text-align: center;
+}
+
+.footer .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 20px;
+}
+
+.footer .main .up,
+.footer .main .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.footer .main button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.footer .main button:hover {
+    background-color: #555;
+}
+
+.footer .main button svg {
+    fill: #bbb;
+    transition: fill 0.2s ease-in-out;
+}
+
+.footer .main button:hover svg {
+    fill: #fff;
+}

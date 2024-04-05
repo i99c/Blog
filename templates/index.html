@@ -1,0 +1,58 @@
+{% load static %}
+
+{% include 'includes/_navbar.html' %}
+
+<title>Oyun Blogu</title>
+<link rel="stylesheet" href="{% static 'css/index.css' %}" />
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Oyun Dünyasına Hoş Geldiniz!</h1>
+    <p>En son oyun gelişmelerini takip edin ve favori oyunlarınızı keşfedin.</p>
+    <a href="#" class="cta-btn">Keşfet</a>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature-item">
+    <img src="https://images.playground.com/e483d91257984d0bb7f6615d949183d9.jpeg" alt="En Popüler Oyunlar" />
+    <h2>En Popüler Oyunlar</h2>
+    <p>Hangi oyunlar popüler? İşte size en çok oynanan oyunlar hakkında bilgi.</p>
+  </div>
+  <div class="feature-item">
+    <img src="https://images.playground.com/d805378e754f41cd8adc03314efb8cef.jpeg" alt="Yeni Çıkan Oyunlar" />
+    <h2>Yeni Çıkan Oyunlar</h2>
+    <p>Son çıkan oyunları keşfedin ve ilk incelemeleri okuyun.</p>
+  </div>
+  <div class="feature-item">
+    <img src="https://images.playground.com/367443b727594a7bb0a55874e358876f.jpeg" alt="Oyun Kritikleri" />
+    <h2>Oyun Kritikleri</h2>
+    <p>Uzmanlar tarafından kaleme alınan oyun kritiklerini okuyun ve fikir edinin.</p>
+  </div>
+</section>
+
+<section class="blog">
+  <h2>Son Blog Yazıları</h2>
+  <div class="blog-item">
+    <img src="blog1.jpg" alt="Blog 1" />
+    <h3>Blog Yazısı Başlığı 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero...</p>
+    <a href="#" class="read-more">Devamını Oku</a>
+  </div>
+  <div class="blog-item">
+    <img src="blog2.jpg" alt="Blog 2" />
+    <h3>Blog Yazısı Başlığı 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero...</p>
+    <a href="#" class="read-more">Devamını Oku</a>
+  </div>
+  <div class="blog-item">
+    <img src="blog3.jpg" alt="Blog 3" />
+    <h3>Blog Yazısı Başlığı 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero...</p>
+    <a href="#" class="read-more">Devamını Oku</a>
+  </div>
+</section>
+
+{% include 'includes/_footer.html' %}

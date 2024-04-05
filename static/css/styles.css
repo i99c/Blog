@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Macondo", cursive;
+}
+
+body {
+    background: linear-gradient(to right, #86469C, #BC7FCD, #FB9AD1, #FFCDEA, #1D24CA);
+    /* Arkaplan rengi */
+}
+
+/* Trendler bölümü */
+.trendler {
+    width: 450px;
+    height: 350px;
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    /* Arkaplan rengi geçişi */
+    padding: 20px;
+    border-radius: 8px;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+}
+
+/* Trend başlığı */
+.trendler h3 {
+    color: #86469C;
+    /* Başlık rengi */
+    font-size: 24px;
+    /* Başlık boyutu */
+    margin-bottom: 10px;
+}
+
+/* Trend alt başlıklar */
+.trend-alt-başlıklar {
+    margin-top: 10px;
+    /* Yukarıdan boşluk */
+}
+
+/* Her bir trend alt başlık */
+.trend-alt-başlıklar h4 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Her bir trend alt başlık içindeki bağlantılar */
+.trend-alt-başlıklar h4 a {
+    text-decoration: none;
+    color: #008DDA;
+    /* Bağlantı rengi */
+    font-size: 16px;
+    /* Bağlantı boyutu */
+}
+
+/* Bağlantı hover efekti */
+.trend-alt-başlıklar h4 a:hover {
+    text-decoration: underline;
+    /* Alt çizgi efekti */
+}

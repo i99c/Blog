@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    background-color: #0F0335;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+    background: url('https://fly.storage.tigris.dev/pai-images/57aef2daf34a4e14b2176a943cdea60e.jpeg') no-repeat center/cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 80px;
+    color: #fff;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #240046;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.text-sci {
+    text-align: center;
+    max-width: 500px;
+}
+
+.text-sci h2 {
+    color: #8b79d9;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.text-sci h2 span {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.text-sci p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    font-weight: bold;
+}
+
+.input-box .icon {
+    position: absolute;
+    left: -30px;
+    top: 49%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #f388c8;
+    pointer-events: none;
+    z-index: 1;
+    /* Eklendi */
+    padding: 0 5px;
+    /* Eklendi */
+}
+
+.register-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #400082, #7E0CF5, #CD4DCC, #F7BEFF, #CD4DCC, #7E0CF5, #400082);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #5e27a5;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
