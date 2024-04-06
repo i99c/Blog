@@ -3,6 +3,7 @@ from .forms import *
 from .views import *
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
+from django.contrib.auth.forms import UserCreationForm
 
 
 
@@ -11,11 +12,12 @@ from django.contrib import messages
 def userRegister(request):
     if request.method == 'POST':
         username = request.POST['username']
+        email = request.POST['email']  # Add email field
         password1 = request.POST['password1']
         password2 = request.POST['password2']
 
         if password1 == password2:
-            user = User.objects.create_user(username=username, password=password1)
+            user = User.objects.create_user(username=username, email=email, password=password1)  # Use email parameter
             user.save()
             messages.success(request, 'Kayıt Başarıyla Tamamlandı')
             return redirect('login')
@@ -26,9 +28,9 @@ def userRegister(request):
     return render(request, 'register.html')
 
 
-
 def userLogin(request):
     if request.method == "POST":
+        email = request.POST['email']  # Add email field
         username = request.POST['username']
         password = request.POST['password']
 
@@ -37,7 +39,7 @@ def userLogin(request):
         if user is not None:
             login(request, user)
             messages.success(request, 'Başarıyla Giriş Yapıldı')
-            return redirect('uyegiris') # burada redirect kullanılmalıdır
+            return redirect('uyegiris')
         else:
             messages.error(request, 'Kullanıcı Adı veya Şifre Yanlış')
             return redirect('login')
