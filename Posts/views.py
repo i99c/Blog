@@ -4,6 +4,8 @@ from .models import Post
 def index(request):
     return render(request, "index.html")
 
+def uyegiris(request):
+    return render(request, 'uyegiris.html')
 
 
 
